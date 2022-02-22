@@ -1,6 +1,6 @@
 ---
 name: E-commerce issues
-about: "<ISSUE NAME>"
+about: Issues To Solve For Art Website
 title: ''
 labels: ''
 assignees: ''
