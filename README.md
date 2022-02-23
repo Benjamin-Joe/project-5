@@ -15,6 +15,10 @@ This is PP-5 for Code Institute and for this I decided to create an E-commerce s
 8. [Deployment](#deployment)
 9. [Wireframes](#wireframes)
 
+<a href="build"></a>
+# Build
+During the build process I was able to move over some existing code from my previous attempt at this project, this helped save some time and allowed me to focus on other areas, mainly authentication areas of the website. Please check the sources section for a link to the old repo.
+
 <a href="installations"></a>
 # Installations
 In order to complete this project, quite a few imports were needed, they are all listed below:  
