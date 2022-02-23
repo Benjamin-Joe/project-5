@@ -56,3 +56,27 @@ h1, h2, h3, h4, h5, h6,
 .nav-2-title:hover {
     color: black;
 }
+
+/*Home.html ------------------------------------ */
+
+.home-center {
+    width: 60%;
+    margin: auto;
+    padding-top: 18px;
+    font-family: 'Source Serif 4', sans-serif;
+}
+
+.store-btn {
+    width: 40%;
+    font-weight: bold;
+}
+
+.welcome-msg {
+    font-weight: bold;
+}
+
+.front-img {
+    width: 30%;
+    height: auto;
+    margin: 10px;
+}
