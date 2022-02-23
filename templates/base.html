@@ -87,6 +87,83 @@
     {% block content %}
  
     {% endblock %}
+             <!-- Website Footer  -->
+             <footer class="text-center text-light foot-box" style="background-color: #f1f1f1;">
+              <div class="container">
+                <section class="mb-4">
+                  <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="https://www.facebook.com/Klarart-114271567695163" target="_blank"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-facebook-f"></i
+                  ></a>
+                  <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="https://www.instagram.com/klaradumdum/" target="_blank"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-instagram"></i
+                  ></a>
+                  <a
+                    class="btn btn-link btn-floating btn-lg text-dark m-1"
+                    href="https://github.com/Benjamin-Joe?tab=repositories" target="_blank"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+                    ><i class="fab fa-github"></i>
+                  </a>
+        
+                    <!-- Mailchimp Signup Form -->
+                  <div id="mc_embed_signup">
+                    <form action="https://gmail.us5.list-manage.com/subscribe/post?u=78c77f80fc819709f8ab540c9&amp;id=d117cd0ece" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                      <div id="mc_embed_signup_scroll">
+                      <h2>Subscribe To Our Monthly Newsletter</h2>
+                      <div class="mc-field-group">
+                      <label for="mce-EMAIL" class="email">Email Address
+                      </label>
+                      <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                      </div>
+                      <div id="mce-responses" class="clear foot">
+                      <div class="response" id="mce-error-response" style="display:none"></div>
+                      <div class="response" id="mce-success-response" style="display:none"></div>
+                      </div>
+                      <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_78c77f80fc819709f8ab540c9_d117cd0ece" tabindex="-1" value=""></div>
+                          <div class="optionalParent">
+                              <div class="clear foot">
+                                  <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button btn btn-secondary">
+                                  <p class="brandingLogo"><a href="http://eepurl.com/hMdvsP" title="Mailchimp - email marketing made easy and fun"><img class="mail-img" src="https://eep.io/mc-cdn-images/template_images/branding_logo_text_dark_dtp.svg"></a></p>
+                              </div>
+                          </div>
+                      </div>
+                    </form>
+                  </div>
+                </section>
+              </div>
+            </footer>
+        
+          </div>
+            {% block extrajs %}
+            <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script>
+            <script type='text/javascript'>
+            (function($) 
+            {
+              window.fnames = new Array(); 
+              window.ftypes = new Array();
+              fnames[0]='EMAIL';
+              ftypes[0]='email';
+              fnames[1]='FNAME';
+              ftypes[1]='text';
+              fnames[2]='LNAME';
+              ftypes[2]='text';
+              fnames[3]='ADDRESS';
+              ftypes[3]='address';
+              fnames[4]='PHONE';
+              ftypes[4]='phone';
+              fnames[5]='BIRTHDAY';
+              ftypes[5]='birthday';
+              }
+              (jQuery));var $mcj = jQuery.noConflict(true);</script>
+            {% endblock %}
 
     {% block postloadjs %}
     {% endblock %}
