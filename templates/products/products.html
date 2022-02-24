@@ -3,7 +3,57 @@
 
 {% block content %}
 <div class="content-holder">
-    <h1>Testing Product Page</h1>
-    {{ products }}
-</div>
+    <h1 class="text-center"> Store</h1>
+    <div class="row">
+        <div class="product-container col-10 offset-1">
+            <div class="row">
+                {% for product in products %}
+                    <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+                        <div class="card product-display">
+                            <a href="{{ product.image.url }}">
+                                <img class="card-img-top img-fluid product-img" src="{{ product.image.url }}" alt="{{ product.title }}">
+                            </a>
+                            <div class="card-footer bg-white pt-0 border-0 text-center">
+                                <div class="row">
+                                    <div class="col">
+                                      <p class="lead mb-0 text-center card-title">{{ product.title}}</p>
+                                        <p class="lead mb-0 text-center font-weight-bold card-price">${{ product.price }}</p>
+                                        <p class="text-center card-cat mb-0 card-category">{{ product.category }}</p>
+                                        {% if product.rating %}
+                                            <p class="card-rating mb-0 text"><small class="text-muted"><i class="fas fa-medal mr-1"></i>{{ product.rating }} / 5</small></p>
+                                        {% else %}
+                                            <p class="card-rating mb-0"><small class="text-muted">No Rating</small></p>
+                                        {% endif %}
+                                    <button class="btn btn-secondary view-btn"> <a class="view-product-btn" href="{{ product.get_absolute_url }}"> View Product</a></button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    {% if forloop.counter|divisibleby:1 %}
+                        <div class="col-12 d-sm-none mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}                        
+                    {% if forloop.counter|divisibleby:2 %}
+                        <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:3 %}
+                        <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+                    {% if forloop.counter|divisibleby:4 %}
+                        <div class="col-12 d-none d-xl-block mb-5">
+                            <hr>
+                        </div>
+                    {% endif %}
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+  </div>
+  <hr>
 {% endblock %}
