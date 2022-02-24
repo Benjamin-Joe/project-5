@@ -36,6 +36,15 @@ The type of clients that this website is aimed at is middle aged women for the m
     <img src="./media/readme/fb-3.png" alt="Facebook business image">  
     <img src="./media/readme/fb-2.png" alt="Facebook business image">
 
+<a href="testing"></a>
+# Testing  
+Creating this website meant tests, and lots of them. I tested my code in multiple ways:
+Chrome Dev Tools:  
+These helped me out so much throughout the build process as they allowed me to see any issues in real time and have complete control on how things were shaping up, Below is a screenshot of the chrome dev tools  
+    <img src="./media/readme/chrome-tools.png" alt="Chrome developer tools">  
+I also made good use of the lighthouse ability within chrome developer tools. This helped me see where possible running problems could be and also it gave me tips on how to speed up the website by making a few minor changes.
+
+
 <a href="wireframes"></a>
-# Wireframes
+# Wireframes  
 In order to help me create the site I used Balsamiq Wireframes. These helped me to have some sort of rough idea of what I wanted to build. These proved to be very helpful in keeping me on the right track and allowed me to break the website down into sections, preventing the workload from getting overwhelming. The wireframs are picture below:  
