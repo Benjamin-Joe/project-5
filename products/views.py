@@ -13,7 +13,6 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "Nothing Entered!")
                 return redirect(reverse('products'))
 
             queries = Q(title__icontains=query) | Q(description__icontains=query)
