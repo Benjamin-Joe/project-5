@@ -111,3 +111,10 @@ display: flow-root;
 #mc-embedded-subscribe {
     margin-top: 4px;
 }
+
+/* Bag.html -------------------- */
+
+.update-link,
+.remove-item {
+    cursor: pointer;
+}
