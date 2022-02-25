@@ -59,7 +59,7 @@
               <input class="form-control mr-sm-2" required type="text" name="q" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0 nav-search" type="submit">Search</button>
             </form>
-            <a href="" class="pl-2" type="button" id="" role="button">
+            <a href="{% url 'view_bag' %}" class="pl-2" type="button" id="" role="button">
               <i class="fas fa-shopping-basket">
                 {% if grand_total %}
                 ${{ grand_total|floatformat:2 }}
