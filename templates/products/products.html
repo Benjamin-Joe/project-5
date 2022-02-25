@@ -5,6 +5,7 @@
 {% block content %}
 <div class="content-holder">
     <h1 class="text-center"> Store</h1>
+    <p class="text-center"><small><a href="/">Home</a> | {{ products|length }} Product(s)</small></p>
     <div class="row">
         <div class="product-container col-10 offset-1">
             <div class="row">
@@ -19,7 +20,7 @@
                                     <div class="col">
                                       <p class="lead mb-0 text-center card-title">{{ product.title}}</p>
                                         <p class="lead mb-0 text-center font-weight-bold card-price">${{ product.price }}</p>
-                                        <p class="text-center card-cat mb-0 card-category">{{ product.category }}</p>
+                                        <p class="text-center card-cat mb-0 card-category"><a href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category }}</a></p>
                                         {% if product.rating %}
                                             <p class="card-rating mb-0 text"><small class="text-muted"><i class="fas fa-medal mr-1"></i>{{ product.rating }} / 5</small></p>
                                         {% else %}
@@ -56,5 +57,16 @@
         </div>
     </div>
   </div>
+  <a href="" class="top-btn">
+     <p class="text-center"> Back To Top </p>
+  </a>
   <hr>
+{% endblock %}
+{% block extrajs %}
+{{ block.super }}
+<script type="text/javascript">
+    $('.top-btn').click(function(e) {
+        window.scrollTo(0,0)
+    })
+</script>
 {% endblock %}

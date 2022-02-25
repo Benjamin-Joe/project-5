@@ -18,6 +18,8 @@
               <div class="product-details-container mb-5 mt-md-5">
                   <p class="mb-0">{{ product.title }}</p>
                   <p class="lead mb-0 text-left font-weight-bold">${{ product.price }}</p>
+                  <p class="lead mb-0 text-left"><a href="{% url 'products' %}?category={{ product.category.name }}">{{ product.category }}</a></p>
+
                   {% if product.rating %}
                       <small class="text-muted"><i class="fas fa-medal mr-1"></i>{{ product.rating }} / 5</small>
                   {% else %}
