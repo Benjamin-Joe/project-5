@@ -55,7 +55,7 @@
                       {% endif %}           
                   </div>
             </ul>
-            <form method="GET" action="" class="form-inline my-2 my-lg-0">
+            <form method="GET" action="{% url 'products' %}" class="form-inline my-2 my-lg-0">
               <input class="form-control mr-sm-2" required type="text" name="q" placeholder="Search" aria-label="Search">
               <button class="btn btn-outline-success my-2 my-sm-0 nav-search" type="submit">Search</button>
             </form>
