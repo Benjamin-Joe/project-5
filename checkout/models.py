@@ -35,7 +35,7 @@ class Order(models.Model):
 
     def __str__(self):
         return self.order_number
-    
+
     def update_total(self):
         "Update total for every time an item is added "
         self.order_total = self.lineitems.aggregate(Sum('lineitem_total'))['lineitem_total__sum']
