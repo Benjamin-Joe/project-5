@@ -1,9 +1,13 @@
+"Forms.py File In Checkout App"
 # Code taken from Code Institute
 from django import forms
 from .models import Order
 
+
 class OrderForm(forms.ModelForm):
+    "Form for ordering items"
     class Meta:
+        "Meta For displaying form items"
         model = Order
         fields = ('full_name', 'email', 'phone_number',
                   'street_address1', 'street_address2',

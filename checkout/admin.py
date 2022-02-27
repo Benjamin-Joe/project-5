@@ -1,14 +1,17 @@
+"Admin.py In Checkout App"
 # Code below taken from Code Institute
 from django.contrib import admin
 from .models import Order, OrderLineItem
 
 
 class OrderLineItemAdminInline(admin.TabularInline):
+    "Admin view for orderlineitemadmin"
     model = OrderLineItem
     readonly_fields = ('lineitem_total',)
 
 
 class OrderAdmin(admin.ModelAdmin):
+    "Orderadmin class for admin view"
     inlines = (OrderLineItemAdminInline,)
 
     readonly_fields = ('order_number', 'date',
