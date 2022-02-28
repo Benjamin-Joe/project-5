@@ -6,5 +6,23 @@
 {% endblock %}
 
 {% block content %}
+<div class="content-holder">
+
 <h1>Hello</h1>
+<div class="row">
+    <div class="col-12 col-lg-6">
+        <p>Default Delivery Info</p>
+        <form action="{% url 'profile' %}" method="POST" id="profile-update-form">
+            {% csrf_token %}
+            {{ form|crispy }}
+            <button class="btn btn-primary float-right">Update Info</button>
+        </form>
+    </div>
+    <div class="col-12 col-lg-6">
+        <p>Your Order History  </p>
+        {{ orders }}
+    </div>
+
+</div>
+</div>
 {% endblock %}
